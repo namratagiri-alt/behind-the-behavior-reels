@@ -1,0 +1,108 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R034",
+ "title": "Why the best teams report more mistakes",
+ "series": "What your workplace is teaching you",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "The best teams reported more mistakes. Why?",
+   "data": {
+    "lines": [
+     "The best teams",
+     "reported more",
+     "mistakes. Why?"
+    ],
+    "accent": [
+     "more"
+    ],
+    "size": 104
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "say": "In the nineteen nineties, researcher Amy Edmondson studied hospital teams. She expected better teams to make fewer errors. The data said the opposite.",
+   "data": {
+    "left": {
+     "label": "Expected",
+     "text": "Better teams, fewer errors"
+    },
+    "right": {
+     "label": "Found",
+     "text": "Better teams, more reported errors"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "headline",
+   "say": "So were the strongest teams actually worse at their jobs?",
+   "data": {
+    "lines": [
+     "Were they",
+     "actually worse?"
+    ],
+    "accent": [
+     "worse?"
+    ],
+    "size": 110
+   }
+  },
+  {
+   "role": "proof",
+   "type": "chain",
+   "say": "Probably not. Her explanation: they were more willing to speak up. Mistakes got reported, discussed, and fixed.",
+   "data": {
+    "items": [
+     "Mistake",
+     "Speak up",
+     "Discuss",
+     "Fix"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "headline",
+   "say": "She later called this climate psychological safety. The belief that you won't be punished for speaking up.",
+   "data": {
+    "lines": [
+     "Psychological",
+     "safety"
+    ],
+    "accent": [
+     "safety"
+    ],
+    "kicker": "Safe to speak up",
+    "size": 112
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "So on your team, does a mistake get hidden, or discussed?",
+   "data": {
+    "text": "On your team, are mistakes hidden or discussed?",
+    "accent": [
+     "hidden",
+     "discussed?"
+    ],
+    "kicker": "Share this with your manager",
+    "size": 86
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why the best teams admit more mistakes",
+  "accent": [
+   "more",
+   "mistakes"
+  ],
+  "sub": "Psychological safety at work"
+ }
+}

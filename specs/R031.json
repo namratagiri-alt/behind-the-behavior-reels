@@ -1,0 +1,105 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R031",
+ "title": "Why automatic saving beats good intentions",
+ "series": "Psychology you can use",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "You meant to save. The default decided.",
+   "data": {
+    "lines": [
+     "You meant to save.",
+     "The default decided."
+    ],
+    "accent": [
+     "default"
+    ],
+    "size": 100
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "say": "Some employers make you sign up for retirement savings. Others enroll you automatically, and you can opt out anytime.",
+   "data": {
+    "left": {
+     "label": "Opt in",
+     "text": "You choose to start saving"
+    },
+    "right": {
+     "label": "Automatic",
+     "text": "You choose to stop"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "headline",
+   "say": "Same choice. Same freedom. Only the starting point changes.",
+   "data": {
+    "lines": [
+     "Same choice.",
+     "Different default."
+    ],
+    "accent": [
+     "default."
+    ],
+    "size": 108
+   }
+  },
+  {
+   "role": "proof",
+   "type": "headline",
+   "say": "When one large US company switched to automatic enrollment, participation jumped by about forty-eight percentage points.",
+   "data": {
+    "lines": [
+     "+48 points",
+     "in sign-ups"
+    ],
+    "accent": [
+     "+48"
+    ],
+    "kicker": "Madrian & Shea, 2001",
+    "size": 130
+   }
+  },
+  {
+   "role": "proof",
+   "type": "chain",
+   "say": "Present bias makes us delay. A default removes the decision. So doing nothing becomes saving.",
+   "data": {
+    "items": [
+     "Present bias",
+     "Default",
+     "Doing nothing",
+     "Saving grows"
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "So what if saving happened before you could decide? An automatic transfer on payday does exactly that.",
+   "data": {
+    "text": "What if saving happened before you could decide?",
+    "accent": [
+     "before"
+    ],
+    "kicker": "Save this for payday",
+    "size": 86
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why automatic saving beats good intentions",
+  "accent": [
+   "automatic"
+  ],
+  "sub": "Defaults, delay and doing nothing"
+ }
+}

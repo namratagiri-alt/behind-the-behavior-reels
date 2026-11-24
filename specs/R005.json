@@ -1,0 +1,119 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R005",
+ "title": "Why a familiar false claim feels true",
+ "series": "The decision you didn't notice making",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "You've heard it ten times. That's the problem.",
+   "data": {
+    "lines": [
+     "Heard it ten times?",
+     "That's the problem."
+    ],
+    "accent": [
+     "problem."
+    ],
+    "size": 104
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chat",
+   "say": "A claim keeps showing up. Family group. Office chat. Your feed. By the tenth time, it just feels true.",
+   "data": {
+    "messages": [
+     {
+      "from": "them",
+      "text": "Vitamin C stops colds!",
+      "meta": "Family group"
+     },
+     {
+      "from": "them",
+      "text": "Vitamin C stops colds!",
+      "meta": "Office chat"
+     },
+     {
+      "from": "them",
+      "text": "Vitamin C stops colds!",
+      "meta": "Your feed"
+     }
+    ]
+   }
+  },
+  {
+   "role": "setup",
+   "type": "headline",
+   "say": "It's called the illusory truth effect. Repeated claims are easier to process, and easy feels true.",
+   "data": {
+    "lines": [
+     "Familiar",
+     "feels true."
+    ],
+    "accent": [
+     "true."
+    ],
+    "kicker": "The illusory truth effect",
+    "size": 120
+   }
+  },
+  {
+   "role": "proof",
+   "type": "split",
+   "say": "In a 2015 study, repetition made false statements seem more believable, even when people knew the correct answer.",
+   "data": {
+    "left": {
+     "label": "What you know",
+     "text": "This is false"
+    },
+    "right": {
+     "label": "What you feel",
+     "text": "But it sounds familiar"
+    }
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "say": "Repetition. Ease. A gut sense of truth. Together, they can quietly outvote what you know.",
+   "data": {
+    "items": [
+     "Repetition",
+     "Ease",
+     "Feels true"
+    ],
+    "footer": "Knowledge doesn't always win.",
+    "accent": [
+     "win."
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "So ask yourself: do I know this, or have I just heard it a lot?",
+   "data": {
+    "text": "Do you know it, or have you just heard it a lot?",
+    "accent": [
+     "know",
+     "heard"
+    ],
+    "kicker": "Share this with your family group",
+    "size": 86
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why a familiar lie feels true",
+  "accent": [
+   "feels",
+   "true"
+  ],
+  "sub": "Repetition, ease and belief"
+ }
+}

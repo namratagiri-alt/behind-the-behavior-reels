@@ -281,7 +281,8 @@ def sc_bars(d, t, D, data):
     pt = prog(t, 0.05, 0.5)
     if data.get("title"):
         centered_rich(d, 430, data["title"], ft, set(), pt)
-        fi_ = font("sans_s", 28); tag = "ILLUSTRATIVE, NOT MEASURED DATA"
+        fi_ = font("sans_s", 28)
+        tag = ("SOURCE: " + data["source"]).upper() if data.get("source") else "ILLUSTRATIVE, NOT MEASURED DATA"
         d.text(((W - text_w(fi_, tag)) // 2, 505), tag, font=fi_, fill=rgba(PAL["dim"], pt))
     fl = font("sans_s", 40)
     for i, b in enumerate(data["bars"]):
@@ -293,6 +294,9 @@ def sc_bars(d, t, D, data):
         wv = int(840 * b["value"] * q)
         if wv > 70:
             d.rounded_rectangle([120, y + 70, 120 + wv, y + 140], 35, fill=rgba(col, 1))
+        if b.get("display") and q > 0.6:
+            fv = font("sans_k", 48)
+            d.text((960 - text_w(fv, b["display"]), y - 6), b["display"], font=fv, fill=rgba(col, min(1, (q - 0.6) * 2.5)))
     if data.get("footer"):
         pf = prog(t, D * 0.75, 0.5)
         centered_rich(d, 1180, data["footer"], font("serif_i", 56), set(), pf, maxw=860)

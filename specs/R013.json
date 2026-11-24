@@ -1,0 +1,120 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R013",
+ "title": "Why 'ok.' can start a fight",
+ "series": "The invisible rules of human behavior",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "One text. Two completely different messages.",
+   "data": {
+    "lines": [
+     "One text.",
+     "Two messages."
+    ],
+    "accent": [
+     "two"
+    ],
+    "size": 120
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chat",
+   "say": "You ask a simple question. They reply, okay, with a full stop. And suddenly you're wondering what you did wrong.",
+   "data": {
+    "messages": [
+     {
+      "from": "me",
+      "text": "Want to grab dinner tonight?",
+      "meta": "7:42 PM"
+     },
+     {
+      "from": "them",
+      "text": "ok.",
+      "meta": "7:58 PM"
+     }
+    ]
+   }
+  },
+  {
+   "role": "setup",
+   "type": "headline",
+   "say": "Text strips away the voice, the pauses, the face. Your brain fills the gap.",
+   "data": {
+    "lines": [
+     "No voice.",
+     "No face.",
+     "Just a full stop."
+    ],
+    "accent": [
+     "stop."
+    ],
+    "size": 100
+   }
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "say": "In one study, senders expected their tone to come through seventy-eight percent of the time. Email readers got it right fifty-six percent. Close to chance.",
+   "data": {
+    "title": "Can they hear your tone?",
+    "source": "Kruger et al. 2005, JPSP",
+    "bars": [
+     {
+      "label": "What senders expected",
+      "value": 0.78,
+      "display": "78%"
+     },
+     {
+      "label": "What email readers got right",
+      "value": 0.56,
+      "display": "56%",
+      "hi": true
+     }
+    ],
+    "footer": "Close to a coin flip."
+   }
+  },
+  {
+   "role": "proof",
+   "type": "split",
+   "say": "Another study found text replies ending in a full stop were rated less sincere. The same handwritten note wasn't.",
+   "data": {
+    "left": {
+     "label": "Text: ok.",
+     "text": "Rated less sincere"
+    },
+    "right": {
+     "label": "Handwritten: ok.",
+     "text": "No difference"
+    }
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "So before you react, ask: is it their tone, or my mind filling the gap?",
+   "data": {
+    "text": "Their tone, or your mind filling the gap?",
+    "accent": [
+     "tone,",
+     "gap?"
+    ],
+    "kicker": "Send this to someone who texts 'ok.'",
+    "size": 88
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why 'ok.' can start a fight",
+  "accent": [
+   "fight"
+  ],
+  "sub": "Tone, texts and the missing voice"
+ }
+}
