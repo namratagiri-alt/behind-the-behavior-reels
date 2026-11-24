@@ -169,3 +169,16 @@ Instagram says it may show fewer Reels that are "majority text", low-resolution 
 - Statuses: Idea, Idea (needs evidence review), In production, Published, Held, Skipped (with reason in Insights).
 - Every production run updates its row. The weekly run fills metrics and insights and tops the queue back up to at least 30 eligible ideas (score 32+, evidence 3+), balanced across the five pillars.
 - After updating tracker.csv, refresh the Google Sheet mirror "Behind the Behavior content tracker" in Drive folder 1ROYeqQaeVbXT97IycGYPsRvj0d6Azd1i: first read the current mirror and copy any text Namrata added in the "Namrata notes" column into tracker.csv, then upload tracker.csv as a new Google Sheet with the same name and trash the previous mirror.
+
+## Hook bank and curiosity series (added 25 Nov 2026)
+- hooks/ holds Namrata's hook banks: career_and_workplace.txt, relationships.txt, curiosity_series.txt, plus hook formulas. Read hooks/README.md first.
+- Recurring curiosity series you may use as the "Series" label: Do you know why?; Have you wondered?; Are you aware?; The psychology behind...; Your brain is not broken; One small shift; Myth vs psychology. Keep series names stable so viewers recognize them.
+- Relationship Reels formula: name the feeling or pattern (hook), reframe with the psychology in one sentence, realistic example, one small respectful step, CTA such as "Save this for your next difficult conversation."
+
+## Sensitive topics (added 25 Nov 2026)
+Autonomous runs may cover these only as described; otherwise set status "Held" and notify Namrata.
+- Burnout and stress: allowed as everyday workplace psychology (job demands, recovery, role ambiguity) with no diagnosis and no clinical claims. If a Reel would discuss depression, anxiety disorders, panic, self-harm or medical symptoms, hold it.
+- Body image, eating, restriction, food guilt, weight: always hold for Namrata's review. These can harm vulnerable viewers, including teens.
+- Relationships: never diagnose. If a Reel touches control, coercion, abuse or feeling unsafe, add on screen and in the caption that professional or specialist support matters when there is abuse or a safety concern, and hold for review the first time this framing is used.
+- Career and money: explain psychology and evidence; never give individual financial, legal or HR advice; add "Not financial advice" where pay or money decisions are discussed.
+- Contested findings to avoid stating as fact: "mental effort drains willpower" (ego depletion), "people leave managers, not companies" as a universal rule, "Sunday scaries" or "silence wins negotiations" as research findings, and attachment "types" as fixed labels.
