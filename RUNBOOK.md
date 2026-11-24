@@ -11,8 +11,8 @@ This is the operating manual for every scheduled run. The master editorial brief
 | Reel specs (Rxxx.json) | Drive folder 02_reel_specs, id 1yoBQSYHdygf8xwj6qWomO9XO4eTlEqxe |
 | Covers, captions package | Drive folder 03_ready_to_publish, id 14cfvempIeDJlL5aZ3pCReg0fyWB3zWgO |
 | Editorial tracker (Google Sheet) | id 12AAlCmHdQ8k2gpLwfmdteWtz2AsyOs_MR1q_Q_gkMos |
-| Video hosting | GitHub repo Nammygiri/behind-the-behavior-reels, folder media/. Public URL pattern: https://cdn.jsdelivr.net/gh/Nammygiri/behind-the-behavior-reels@main/media/<ID>.mp4 (served as video/mp4). Fallback: https://raw.githubusercontent.com/Nammygiri/behind-the-behavior-reels/main/media/<ID>.mp4 |
-| Instagram publishing | Windsor.ai connector "instagram", action create_video_post. Use ONLY the account named for Behind the Behavior. Never publish to nammyfit14 (17841402171283573) or purpllewave (17841476377023976). |
+| Video hosting | GitHub repo namratagiri-alt/behind-the-behavior-reels, folder media/. Public URL pattern: https://cdn.jsdelivr.net/gh/namratagiri-alt/behind-the-behavior-reels@main/media/<ID>.mp4 (served as video/mp4). Fallback: https://raw.githubusercontent.com/namratagiri-alt/behind-the-behavior-reels/main/media/<ID>.mp4 |
+| Instagram publishing | Windsor.ai connector "instagram", action create_video_post, account purpllewave (17841476377023976). Never publish to nammyfit14 (17841402171283573). |
 
 Drive uploads are limited to about 3 MB per file through the connector, so MP4s never go to Drive. They go to GitHub.
 
@@ -23,7 +23,7 @@ Drive uploads are limited to about 3 MB per file through the connector, so MP4s 
    - https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
    - https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
 3. Get reelengine.py and qc.py: prefer the copies in the GitHub repo (engine/); otherwise download from Drive folder 01_engine. Write them to /home/claude/studio/engine/.
-4. Attach the GitHub repo with push access (add_repo owner Nammygiri, repo behind-the-behavior-reels, access push) and clone it.
+4. Attach the GitHub repo with push access (add_repo owner namratagiri-alt, repo behind-the-behavior-reels, access push) and clone it.
 
 ## Making a Reel
 
