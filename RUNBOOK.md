@@ -182,3 +182,15 @@ Autonomous runs may cover these only as described; otherwise set status "Held" a
 - Relationships: never diagnose. If a Reel touches control, coercion, abuse or feeling unsafe, add on screen and in the caption that professional or specialist support matters when there is abuse or a safety concern, and hold for review the first time this framing is used.
 - Career and money: explain psychology and evidence; never give individual financial, legal or HR advice; add "Not financial advice" where pay or money decisions are discussed.
 - Contested findings to avoid stating as fact: "mental effort drains willpower" (ego depletion), "people leave managers, not companies" as a universal rule, "Sunday scaries" or "silence wins negotiations" as research findings, and attachment "types" as fixed labels.
+
+## Illustrated scenes and watermark (added 25 Nov 2026)
+- Every Reel scene can carry an "illustration" key. Available: desk, phone, shelf, meeting, night, kitchen, commute, park, money, calendar (engine/illustrations.py; faceless flat illustrations drawn in code, no people, no faces, no text). The engine drifts them slowly behind the content with a dark scrim so text stays readable.
+- qc.py requires at least half the scenes to be illustrated and no more than 2 headline scenes. Pick illustrations that match the everyday example (salary/saving: money or calendar; work: desk or meeting; texting: phone; home: kitchen; late-night thoughts: night; travel: commute; children: park; shopping: shelf).
+- Do not use Canva or Figma image generation from automated runs: Canva credits are exhausted and Figma runs on the Inovaare company plan. If more illustration types are needed, add them to illustrations.py in the same style.
+- Watermark is OFF by default (spec "watermark": false or omitted). Instagram says it may show fewer watermarked or majority-text Reels.
+
+## Weekly carousel (added 25 Nov 2026)
+- One carousel a week, posted by the "Behind the Behavior weekly carousel" scheduled task (Saturdays 12:53 PM IST).
+- Format: engine/carousel.py renders 1080x1350 JPEG slides: cover, 5 to 8 item slides (title, plain explanation, "Try:" action, short source), closing slide (one action, save prompt, sign-off). Carousel specs live in carousels/Cxxx.json; images in media/carousels/.
+- Good carousel topics: checklists and frameworks ("7 thinking traps", "5 habit design rules", "Myth vs psychology: 6 claims"), each item backed by a Tier 1 or 2 source. Carousels may be text-led; the majority-text concern applies to Reels.
+- Publish with Windsor execute_action, connector instagram, account 17841476377023976, action "create_carousel_post", params image_urls (2 to 10 commit-pinned jsDelivr URLs, JPEG under 8 MB, 4:5) and caption. Log to publish_log.csv with slot "CAROUSEL" and add a tracker row with the carousel ID.

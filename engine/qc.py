@@ -41,6 +41,8 @@ def qc(outdir, rid):
         "hook_has_on_screen_text": bool(hooks) and all(h["on_screen_text"] for h in hooks),
         "setup_ends_by_16s": bool(setup) and 10 <= setup[-1]["end"] <= 16.5,
         "proof_covers_15_to_25s": bool(proof) and proof[0]["start"] <= 16.5 and proof[-1]["end"] >= 24,
+        "illustrated_half_of_scenes": sum(1 for x in sc if x.get("illustration")) * 2 >= len(sc),
+        "max_2_headline_scenes": sum(1 for x in sc if x["type"] == "headline") <= 2,
         "takeaway_last_5_to_8s": last.get("role") == "takeaway" and 5 <= (last["end"] - last["start"]) <= 8.5,
     })
     # contact sheet: midpoint and late point of each scene

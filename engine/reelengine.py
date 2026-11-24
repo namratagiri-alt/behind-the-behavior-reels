@@ -552,6 +552,12 @@ def build(spec_path, outdir):
         f.write(" ".join(sc["say"] for sc in spec["scenes"]) + "\n")
 
     bg = make_bg()
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from illustrations import SCENES as ILL_SCENES
+    ILL = {n: ILL_SCENES[n]() for n in {sc.get("illustration") for sc in scenes} if n}
+    yy, xx = np.mgrid[0:H, 0:W]
+    sa = np.clip(1 - np.sqrt(((xx - W / 2) / (W * 0.78)) ** 2 + ((yy - 950) / (H * 0.30)) ** 2), 0, 1) ** 0.8 * 215
+    SCRIM = Image.fromarray(np.dstack([np.full((H, W), 12), np.full((H, W), 14), np.full((H, W), 20), sa]).astype(np.uint8), "RGBA")
     FX = BackgroundFX(sum(map(ord, rid)), [sc["start"] for sc in scenes], venv)
     series = spec.get("series", "").upper(); brand = spec.get("brand", "").upper()
     nframes = int(total * FPS)
@@ -571,11 +577,26 @@ def build(spec_path, outdir):
     fpill = font("sans_k", psize)
     bb = fpill.getbbox(series_txt); pill_th = bb[3] - bb[1]; pill_off = bb[1]
     pill_w = text_w(fpill, series_txt) + 60; pill_h = pill_th + 34
-    WM = load_watermark(120, 0.72) if spec.get("watermark", True) else None
+    WM = load_watermark(120, 0.72) if spec.get("watermark", False) else None
     for fi in range(nframes):
         t = fi / FPS
         frame = bg.copy()
         FX.draw(frame, t)
+        for si, s_ in enumerate(scenes):
+            if s_["start"] <= t < s_["end"]:
+                ill = s_.get("illustration")
+                if ill:
+                    ox = int(60 + 45 * math.sin(t * 0.13)); oy = int(60 + 45 * math.cos(t * 0.11))
+                    crop = ILL[ill].crop((ox, oy, ox + W, oy + H))
+                    lt_ = t - s_["start"]; D_ = s_["end"] - s_["start"]
+                    same_prev = si > 0 and scenes[si - 1].get("illustration") == ill
+                    same_next = si + 1 < len(scenes) and scenes[si + 1].get("illustration") == ill
+                    q = (1 if same_prev else prog(lt_, 0, 0.5)) * (1 if (same_next or si == len(scenes) - 1) else 1 - prog(lt_, D_ - 0.3, 0.3))
+                    if q < 0.999:
+                        crop.putalpha(crop.getchannel("A").point(lambda v, q=q: int(v * q)))
+                    frame.alpha_composite(crop)
+                    frame.alpha_composite(SCRIM)
+                break
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
         # header: brand line + high-visibility series label (topic pill)
         d.text((90, SAFE_TOP), brand, font=fbrand, fill=rgba(PAL["muted"], 1))
@@ -601,7 +622,7 @@ def build(spec_path, outdir):
         proc.stdin.write(frame.tobytes())
     proc.stdin.close(); proc.wait()
     make_cover(spec, f"{outdir}/{rid}_cover.jpg", bg)
-    json.dump({"id": rid, "duration_s": round(total, 2), "scenes": [{"type": s["type"], "role": s.get("role", ""), "start": round(s["start"], 2), "end": round(s["end"], 2), "voice_start": round(s["voice_start"], 2), "voice_end": round(s["voice_end"], 2), "on_screen_text": bool(s.get("data", {}).get("lines") or s.get("data", {}).get("text"))} for s in scenes],
+    json.dump({"id": rid, "duration_s": round(total, 2), "scenes": [{"type": s["type"], "role": s.get("role", ""), "start": round(s["start"], 2), "end": round(s["end"], 2), "voice_start": round(s["voice_start"], 2), "voice_end": round(s["voice_end"], 2), "on_screen_text": bool(s.get("data", {}).get("lines") or s.get("data", {}).get("text")), "illustration": s.get("illustration", "")} for s in scenes],
                "words": len(all_words)}, open(f"{outdir}/{rid}_timeline.json", "w"), indent=1)
     return mp4, total
 
@@ -617,7 +638,7 @@ def make_cover(spec, path, bg):
         d.text(((W - text_w(fs, c["sub"])) // 2, 1250), c["sub"], font=fs, fill=PAL["muted"])
     fb = font("sans_s", 32); b = spec.get("brand", "").upper()
     d.text(((W - text_w(fb, b)) // 2, 1340), b, font=fb, fill=PAL["muted"])
-    wm = load_watermark(140, 0.8) if spec.get("watermark", True) else None
+    wm = load_watermark(140, 0.8) if spec.get("watermark", False) else None
     if wm is not None:  # bottom-right corner of the 3:4 area shown on the profile grid
         im.alpha_composite(wm, (W - 60 - wm.width, 240 + 1440 - 60 - wm.height))
     im.convert("RGB").save(path, quality=92)

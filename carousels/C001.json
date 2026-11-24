@@ -1,0 +1,16 @@
+{
+ "id": "C001",
+ "title": "7 thinking traps that shape your decisions",
+ "series": "Save this checklist",
+ "cover": {"headline": "7 thinking traps that shape your decisions", "accent": ["traps"], "sub": "And one small fix for each", "illustration": "desk"},
+ "items": [
+  {"title": "Anchoring", "body": "The first number you see becomes your reference point, even when someone else chose it.", "try": "Decide your own range before you see a price or an offer.", "source": "Tversky & Kahneman, 1974, Science", "illustration": "shelf"},
+  {"title": "Confirmation bias", "body": "We tend to search for, notice and remember what agrees with what we already think.", "try": "Search for the best argument against your view once.", "source": "Nickerson, 1998, Review of General Psychology", "illustration": "phone"},
+  {"title": "Sunk cost", "body": "Money or time already spent can keep us going, even when stopping would serve us better.", "try": "Ask: if I were starting today, would I choose this?", "source": "Arkes & Blumer, 1985, OBHDP", "illustration": "money"},
+  {"title": "Framing", "body": "The same facts feel different depending on the wording. '90% survive' and '10% die' lead to different choices.", "try": "Restate the choice the other way before you decide.", "source": "Tversky & Kahneman, 1981, Science", "illustration": "meeting"},
+  {"title": "Planning fallacy", "body": "We underestimate how long our own tasks will take, even when past tasks ran late.", "try": "Check how long the last similar task actually took.", "source": "Buehler, Griffin & Ross, 1994, JPSP", "illustration": "calendar"},
+  {"title": "Present bias", "body": "Rewards today feel bigger than rewards later, so 'next month' keeps winning.", "try": "Automate the decision so the future gets a default.", "source": "Laibson, 1997, Quarterly Journal of Economics", "illustration": "money"},
+  {"title": "Illusory truth", "body": "Claims we have heard many times feel more true, even when we know better.", "try": "Ask: do I know this, or have I just heard it a lot?", "source": "Fazio et al., 2015, J Experimental Psychology: General", "illustration": "phone"}
+ ],
+ "closing": {"action": "Pick one trap you fall into most. Notice it once this week.", "accent": ["one"], "kicker": "Save this for your next big decision", "illustration": "desk"}
+}
