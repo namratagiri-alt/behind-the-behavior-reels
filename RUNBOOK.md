@@ -54,3 +54,20 @@ Sensitive topics (mental health, trauma, child safety, diagnosis), evidence you 
 ## Tracker updates
 
 The Drive connector cannot edit individual sheet cells. Read the sheet, change the rows in a local CSV, and upload the full CSV as a new Google Sheet revision only if a content-update tool is available; otherwise keep an append-only log file "publish_log.csv" in the GitHub repo and report status in the run notification.
+
+## Source guide (added 25 Nov 2026 from Namrata's suggestions)
+
+Use these to find ideas, then verify every claim at the level shown. A Reel's core claim must rest on Tier 1 or 2. Never quote or closely paraphrase book passages; explain ideas in your own words and credit the author.
+
+| Source | Tier | How to use it |
+|---|---|---|
+| Nature Human Behaviour (and similar peer-reviewed journals) | 1, primary | Cite directly. Check sample, effect size, and whether it is one study or a meta-analysis. Prefer recent, preregistered or replicated work. |
+| Thinking, Fast and Slow (Kahneman, 2011) | 2, expert synthesis | Great idea source for biases and heuristics. Cite the underlying studies, not just the book. Avoid the behavioral priming material in chapter 4 and treat ego depletion as contested: both had replication failures, which Kahneman himself acknowledged. |
+| The Psychology of Money (Housel, 2020) | 3, popular essays | Idea source for money behavior (reasonable vs rational, compounding, getting wealthy vs staying wealthy). Its stories are illustrations, not evidence. Find research on the mechanism (mental accounting, hedonic adaptation, social comparison) before making a claim. |
+| Everyday Psychology (Gopal Rayappa Kolekar); Everyday Psychology: Applying Psychological Insights in Modern Life | 3, general books | Idea source for relatable scenarios. Verify every mechanism in primary research. |
+| Psychology Today (psychologytoday.com) | 3, expert blogs of mixed quality | Use for leads. Follow each post's citations to the original study; do not cite the blog as proof. |
+| PositivePsychology.com | 3, secondary summaries | Use for leads and reading lists; cite the primary studies it links. |
+| Marriage Foundation (marriagefoundation.org.uk) | 3, advocacy charity | It argues for marriage, so treat its framing as a position. Use for questions and leads only; check claims against peer-reviewed research, and say "linked to" rather than "causes" because most relationship data are correlational. |
+| Emotiv workplace psychology glossary | 4, vendor glossary | Definitions and topic ideas only. Never cite as evidence. |
+
+Relationship and marriage topics: avoid implying one family structure is better for everyone, avoid blaming partners, and do not diagnose. Money topics: explain behavior, never give investment advice.
