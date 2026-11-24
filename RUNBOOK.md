@@ -84,3 +84,49 @@ Prioritize these when choosing or researching concepts. The notes say where the 
 6. Workplace bias and fair evaluation (heuristics and implicit bias in hiring, appraisal, promotion). Evidence: strong field experiments on hiring discrimination (Bertrand & Mullainathan 2004), halo and recency effects in appraisal. The implicit association test predicts individual behavior weakly (Oswald et al. 2013; Forscher et al. 2019): do not claim an IAT score shows how a person will act. The blind-orchestra study (Goldin & Rouse 2000) has published statistical critiques; mention carefully or avoid.
 7. Well-being beyond income (PERMA: positive emotion, engagement, relationships, meaning, accomplishment; Seligman 2011; Butler & Kern 2016 PERMA-Profiler). Do not say income does not matter: recent work finds well-being keeps rising with income on average (Killingsworth 2021; Killingsworth, Kahneman & Mellers 2023). Frame as "income matters, and these matter too", unless a specific study directly compares them.
 8. Marital conflict repair (communication and repair behaviors in couples who stay satisfied vs dissolve). Evidence: Gottman's longitudinal lab studies (for example Gottman & Levenson 2000) and repair-attempt research. Avoid the widely repeated "predicts divorce with 90%+ accuracy" figure: it came from fitting the model to the same sample and has been criticized. Never diagnose a relationship.
+
+## Source guide, part 2 (added 25 Nov 2026 from Namrata)
+
+Same rule: a Reel's core claim rests on Tier 1 or 2. Books give ideas and framing; cite the studies behind them. No quoting or close paraphrase of book text.
+
+### Relationships and marriage
+| Source | Tier | Use and cautions |
+|---|---|---|
+| Gottman & Krokoff 1989, Marital interaction and satisfaction: a longitudinal view (J Consulting and Clinical Psychology) | 1 | Primary. Note its nuance: some conflict engagement predicted better long-term satisfaction, so "fighting is bad" is the wrong takeaway. |
+| Gottman & Levenson 1992, Marital processes predictive of later dissolution (JPSP) | 1 | Primary. Report findings as associations; avoid divorce-prediction accuracy figures. |
+| APA, "Lessons from the Love Lab"; APA, "Can this marriage be saved?" | 2 | Expert summaries; follow to primary studies for any specific number. |
+| The Seven Principles for Making Marriage Work (Gottman & Silver) | 2-3 | Practical framing of Gottman's research; cite the underlying studies. |
+| The Gottman Institute research pages | 3 | Accessible overview, but the institute sells programs. Leads only. |
+| Hold Me Tight (Sue Johnson) | 3 | Emotionally Focused Therapy has controlled-trial support (verify current meta-analyses); the book is a practitioner perspective. Do not present it as therapy advice. |
+| Attached (Levine & Heller) | 3 | Attachment theory is well established (Bowlby; Hazan & Shaver 1987), but the book simplifies it. Never label viewers or partners as an attachment "type". |
+
+### Habits, motivation and well-being
+| Source | Tier | Use and cautions |
+|---|---|---|
+| Wood & Runger 2016, Psychology of habit (Annual Review of Psychology) | 1 | Strong review; preferred habit source. |
+| Lally et al. 2010 (European Journal of Social Psychology) | 1 | Median 66 days, range 18 to 254; small sample, self-reported automaticity. |
+| Mertens et al. 2022, The effectiveness of nudging (PNAS) | 1, with caution | Published replies argued that after correcting for publication bias the average effect may be much smaller or near zero (for example Maier et al. 2022, PNAS). Do not cite its average effect size as settled; cite specific well-replicated nudges (defaults) instead. |
+| Seligman 2018, PERMA and the building blocks of well-being (J Positive Psychology); Penn Positive Psychology Center scholarly articles | 2 | Framework and curated readings. PERMA is a framework, not proof that its parts cause well-being. |
+| Mindset (Carol Dweck) | 2-3 | Growth-mindset interventions show small average effects, larger for some groups (Sisk et al. 2018 meta-analyses; Yeager et al. 2019, Nature). Avoid "mindset transforms results". |
+| Drive (Daniel Pink) | 3 | Popular take on self-determination theory; cite Deci & Ryan. Rewards do not always undermine motivation; be precise. |
+| Atomic Habits (James Clear); The Power of Habit (Charles Duhigg) | 3 | Practical frameworks. The 21-day myth and some anecdotes are not evidence; back mechanisms with Wood & Runger or Lally. |
+
+### Money and decision-making
+| Source | Tier | Use and cautions |
+|---|---|---|
+| Kahneman & Tversky 1979, Prospect theory (Econometrica); Tversky & Kahneman 1974, Judgment under uncertainty (Science) | 1 | Foundational. Loss-aversion size is debated; anchoring is robust. |
+| CFPB: Financial well-being (goal of financial education); Evidence-based strategies to build emergency savings; behavioral economics research portal | 1-2 | Strong institutional research, US-specific. Check that pages are still available and current before citing; label findings as US data when the audience is broader. |
+| Nudge (Thaler & Sunstein) | 2-3 | Framework; cite underlying studies (for example Madrian & Shea 2001). |
+| Scarcity (Mullainathan & Shafir) | 2-3 | Some headline lab findings have had mixed replication results; verify the specific study before using it. |
+| The Psychology of Money (Housel); Thinking, Fast and Slow (Kahneman) | see part 1 | See part 1 cautions. |
+
+### Workplace and organizational psychology
+| Source | Tier | Use and cautions |
+|---|---|---|
+| Industrial and Organizational Psychology (journal) | 1 | Peer-reviewed; many articles are focal-article-plus-commentary debates, so note when a piece is a position paper. |
+| SIOP "Primary Sources" readings | 1 | Curated primary research; good starting point. |
+| SIOP Guidelines for Education and Training in I-O Psychology; APA employer resources | 2 | Topic maps and applied summaries; follow to primary research for claims. |
+| The Fearless Organization (Amy Edmondson) | 2 | Written by the researcher; cite Edmondson 1999 and later studies. |
+| Thinking, Fast and Slow | 2 | Strong for hiring and evaluation judgment (structured vs intuitive judgment); see part 1 cautions. |
+| Dare to Lead (Brene Brown) | 3 | Based on qualitative research; inspirational framing. Use for themes, not causal claims. |
+| Drive (Daniel Pink) | 3 | See above. |
