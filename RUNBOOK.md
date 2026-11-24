@@ -194,3 +194,9 @@ Autonomous runs may cover these only as described; otherwise set status "Held" a
 - Format: engine/carousel.py renders 1080x1350 JPEG slides: cover, 5 to 8 item slides (title, plain explanation, "Try:" action, short source), closing slide (one action, save prompt, sign-off). Carousel specs live in carousels/Cxxx.json; images in media/carousels/.
 - Good carousel topics: checklists and frameworks ("7 thinking traps", "5 habit design rules", "Myth vs psychology: 6 claims"), each item backed by a Tier 1 or 2 source. Carousels may be text-led; the majority-text concern applies to Reels.
 - Publish with Windsor execute_action, connector instagram, account 17841476377023976, action "create_carousel_post", params image_urls (2 to 10 commit-pinned jsDelivr URLs, JPEG under 8 MB, 4:5) and caption. Log to publish_log.csv with slot "CAROUSEL" and add a tracker row with the carousel ID.
+
+## Hosting size rule (jsDelivr 50 MB limit)
+jsDelivr refuses new files (HTTP 403, "Package size exceeded the configured limit of 50 MB") once the repo tree at a commit passes 50 MB. Instagram keeps its own copy after publishing, so:
+- In the commit that adds a new media/<ID>.mp4, `git rm` every other media/*.mp4 whose Reel is already published (they stay recoverable in git history). Never remove an MP4 that is not yet published.
+- Before pushing, check `du -sh --exclude=.git .` is under 40 MB. If carousel JPEGs or covers push it near that, prune published ones the same way.
+- Always confirm each jsDelivr URL returns 200 with the right content type before publishing. If jsDelivr still fails, raw.githubusercontent.com commit-pinned URLs work for JPEGs (used for C001 on 25 Nov). They serve MP4s as application/octet-stream, which is untested with Instagram, so for video, fix the size and use jsDelivr.
