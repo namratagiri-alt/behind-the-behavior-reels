@@ -1,4 +1,4 @@
-id,date,account,media_id,status,error
-R001,2026-11-24T18:44:10Z,purpllewave,17879296050585333,published,
-R002,2026-11-24T18:44:10Z,purpllewave,18437655952197489,published,
-R003,2026-11-24T18:44:10Z,purpllewave,18121863811785408,published,
+id,date,account,media_id,status,error,slot
+R001,2026-11-24T18:44:10Z,purpllewave,17879296050585333,published,,pilot
+R002,2026-11-24T18:44:10Z,purpllewave,18437655952197489,published,,pilot
+R003,2026-11-24T18:44:10Z,purpllewave,18121863811785408,published,,pilot
