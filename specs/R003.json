@@ -1,0 +1,117 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.1,
+ "gap": 0.2,
+ "id": "R003",
+ "title": "Why children resist transitions",
+ "series": "Inside the parent-child dynamic",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "Leaving the park isn't the problem. The switch is.",
+   "data": {
+    "lines": [
+     "Leaving isn't",
+     "the problem.",
+     "The switch is."
+    ],
+    "accent": [
+     "switch"
+    ],
+    "size": 108
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "say": "The park is fun, absorbing, and their choice. Leaving means stopping, and following someone else's plan.",
+   "data": {
+    "left": {
+     "label": "The activity",
+     "text": "Fun, absorbing, their choice"
+    },
+    "right": {
+     "label": "The switch",
+     "text": "Stop, shift, follow someone else's plan"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chain",
+   "say": "To switch, a child has to stop, hold a new plan, shift attention, and manage the feeling.",
+   "data": {
+    "items": [
+     "Stop the fun",
+     "Hold the new plan",
+     "Shift attention",
+     "Manage the feeling"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "headline",
+   "say": "Those are executive function skills, and they keep developing into adolescence.",
+   "data": {
+    "lines": [
+     "Still developing,",
+     "into the teens."
+    ],
+    "accent": [
+     "developing,"
+    ],
+    "kicker": "Executive function",
+    "size": 100
+   }
+  },
+  {
+   "role": "proof",
+   "type": "countdown",
+   "say": "And the classic five-minute warning? In small studies of preschoolers, it often didn't help on its own.",
+   "data": {
+    "text": "5 MORE MINUTES",
+    "start_secs": 299,
+    "sub": "On its own, often not enough"
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "say": "What may help more: a small choice, a clear next step, and room for the feeling.",
+   "data": {
+    "items": [
+     "A small choice",
+     "A clear next step",
+     "Room for the feeling"
+    ],
+    "footer": "Support the switch.",
+    "accent": [
+     "switch."
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "It isn't defiance. It's a skill still under construction.",
+   "data": {
+    "text": "Not defiance. A skill still under construction.",
+    "accent": [
+     "skill"
+    ],
+    "kicker": "Save this for the next park exit",
+    "size": 88
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why kids fight leaving the park",
+  "accent": [
+   "leaving"
+  ],
+  "sub": "It's the switch, not the place"
+ }
+}

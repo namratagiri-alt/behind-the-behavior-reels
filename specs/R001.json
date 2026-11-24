@@ -1,0 +1,119 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.05,
+ "gap": 0.2,
+ "id": "R001",
+ "title": "Why a sale makes you spend more",
+ "series": "The psychology of buying",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "Half off didn't save you money.",
+   "data": {
+    "lines": [
+     "Half off didn't",
+     "save you money."
+    ],
+    "accent": [
+     "didn't"
+    ],
+    "size": 112
+   }
+  },
+  {
+   "role": "setup",
+   "type": "compare",
+   "say": "You weren't shopping for a jacket. Then you saw it. Two hundred dollars, crossed out. One hundred today.",
+   "data": {
+    "label": "Jacket",
+    "old": "$200",
+    "new": "$100",
+    "badge": "50% OFF"
+   }
+  },
+  {
+   "role": "setup",
+   "type": "axis",
+   "say": "That first number is an anchor. Your brain uses it as the reference point, even though the store picked it.",
+   "data": {
+    "ref": "$200",
+    "ref_frac": 0.82,
+    "ref_label": "The anchor (the store picked it)",
+    "point": "$100",
+    "point_frac": 0.4,
+    "point_label": "Now it feels cheap",
+    "gap_label": "the \"saving\""
+   }
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "say": "Economist Richard Thaler called the next part transaction utility. Enjoying the deal itself, not the thing you bought.",
+   "data": {
+    "title": "Transaction utility",
+    "bars": [
+     {
+      "label": "How much you need it",
+      "value": 0.22
+     },
+     {
+      "label": "How good the deal feels",
+      "value": 0.9,
+      "hi": true
+     }
+    ],
+    "footer": "You enjoy the deal, not the jacket."
+   }
+  },
+  {
+   "role": "proof",
+   "type": "countdown",
+   "say": "Add, ends tonight, and imagined regret pushes you to act.",
+   "data": {
+    "text": "ENDS TONIGHT",
+    "start_secs": 14399,
+    "sub": "Anticipated regret"
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "say": "Anchor. Deal pleasure. Regret. None of them is about the jacket.",
+   "data": {
+    "items": [
+     "The anchor",
+     "The deal feeling",
+     "Imagined regret"
+    ],
+    "footer": "None of them is about the jacket.",
+    "accent": [
+     "jacket."
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "So ask: would I want it at one hundred, if it had never cost two hundred?",
+   "data": {
+    "text": "Would you want it at $100 if it had never cost $200?",
+    "accent": [
+     "$100",
+     "never"
+    ],
+    "kicker": "Save this for your next sale",
+    "size": 84
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why a sale makes you spend more",
+  "accent": [
+   "spend",
+   "more"
+  ],
+  "sub": "Anchors, deals and regret"
+ }
+}

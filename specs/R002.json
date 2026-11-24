@@ -1,0 +1,117 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.05,
+ "gap": 0.2,
+ "id": "R002",
+ "title": "Why you check work messages at night",
+ "series": "What your workplace is teaching you",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "say": "Nobody asked you to check. So why do you?",
+   "data": {
+    "lines": [
+     "Nobody asked you",
+     "to check.",
+     "So why do you?"
+    ],
+    "accent": [
+     "you?"
+    ],
+    "size": 104
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chat",
+   "say": "Most nights, there's nothing new. No emergencies, no replies needed. But once in a while, there's a message that actually matters.",
+   "data": {
+    "messages": [
+     {
+      "from": "them",
+      "text": "No new messages",
+      "meta": "9:58 PM"
+     },
+     {
+      "from": "them",
+      "text": "No new messages",
+      "meta": "10:21 PM"
+     },
+     {
+      "from": "them",
+      "text": "Quick one before tomorrow's meeting?",
+      "meta": "10:47 PM"
+     }
+    ]
+   }
+  },
+  {
+   "role": "setup",
+   "type": "headline",
+   "say": "That's an unpredictable reward. And rewards that arrive at random make a habit stubborn.",
+   "data": {
+    "lines": [
+     "Random rewards",
+     "make habits",
+     "stubborn."
+    ],
+    "accent": [
+     "random"
+    ],
+    "size": 100
+   }
+  },
+  {
+   "role": "proof",
+   "type": "chain",
+   "say": "Then each check relieves a little uncertainty. And that relief rewards checking again.",
+   "data": {
+    "items": [
+     "Uncertainty",
+     "Check",
+     "Relief",
+     "Check again"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "split",
+   "say": "In one study, just expecting after-hours replies was tied to more anxiety, even when people barely checked email.",
+   "data": {
+    "left": {
+     "label": "What you did",
+     "text": "Barely opened email"
+    },
+    "right": {
+     "label": "What you felt",
+     "text": "Still anxious, because it was expected"
+    }
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "say": "So, is it your habit, or your workplace's unwritten rule? Usually, both.",
+   "data": {
+    "text": "Your habit, or your workplace's unwritten rule?",
+    "accent": [
+     "habit,",
+     "unwritten"
+    ],
+    "kicker": "Tell us which is louder",
+    "size": 84
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why you check work messages at night",
+  "accent": [
+   "at",
+   "night"
+  ],
+  "sub": "Random rewards and unwritten rules"
+ }
+}
