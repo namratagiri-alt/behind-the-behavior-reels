@@ -551,17 +551,27 @@ def build(spec_path, outdir):
            "-pix_fmt", "yuv420p", "-profile:v", "high", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
            "-movflags", "+faststart", "-shortest", mp4]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    fh = font("sans_b", 26); fbrand = font("sans_k", 34)
+    fh = font("sans_b", 26); fbrand = font("sans_k", 30)
+    # series label: sentence case, as large as fits (max 44 px), inside an amber pill
+    series_txt = spec.get("series", "")
+    series_txt = series_txt[:1].upper() + series_txt[1:]
+    psize = 44
+    while psize > 30 and text_w(font("sans_k", psize), series_txt) > W - 180 - 60:
+        psize -= 2
+    fpill = font("sans_k", psize)
+    bb = fpill.getbbox(series_txt); pill_th = bb[3] - bb[1]; pill_off = bb[1]
+    pill_w = text_w(fpill, series_txt) + 60; pill_h = pill_th + 34
     WM = load_watermark(120, 0.72) if spec.get("watermark", True) else None
     for fi in range(nframes):
         t = fi / FPS
         frame = bg.copy()
         FX.draw(frame, t)
         layer = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
-        # header: brand (primary) + series label, PurplleWave watermark top-right
-        d.text((90, SAFE_TOP), brand, font=fbrand, fill=rgba(PAL["ink"], 0.95))
-        d.text((90, SAFE_TOP + 48), series, font=fh, fill=rgba(PAL["accent"], 1))
-        d.line([90, SAFE_TOP + 88, 90 + 70, SAFE_TOP + 88], fill=rgba(PAL["accent"], 1), width=4)
+        # header: brand line + high-visibility series label (topic pill)
+        d.text((90, SAFE_TOP), brand, font=fbrand, fill=rgba(PAL["muted"], 1))
+        px0, py0 = 80, SAFE_TOP + 46
+        d.rounded_rectangle([px0, py0, px0 + pill_w, py0 + pill_h], pill_h // 2, fill=rgba(PAL["accent"], 1))
+        d.text((px0 + 30, py0 + (pill_h - pill_th) // 2 - pill_off), series_txt, font=fpill, fill=(18, 18, 24, 255))
         if WM is not None:
             layer.alpha_composite(WM, (W - 40 - WM.width, 172))
         for s in scenes:
