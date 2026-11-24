@@ -326,7 +326,7 @@ def sc_stack(d, t, D, data):
         d.rounded_rectangle([x, y, x + 800, y + 150], 30, fill=rgba(PAL["card"], q),
                             outline=rgba(PAL["accent"] if i == n - 1 else PAL["dim"], q), width=3)
         fnum = font("sans_k", 54)
-        d.text((x + 40, y + 42), f"{i+1}", font=fnum, fill=rgba(PAL["accent"], q))
+        d.text((x + 40, y + 42), f"{data.get('start', 1) + i}", font=fnum, fill=rgba(PAL["accent"], q))
         d.text((x + 120, y + 40), it, font=fi, fill=rgba(PAL["ink"], q))
     if data.get("footer"):
         q = prog(t, D * (0.1 + 0.17 * n), 0.6)

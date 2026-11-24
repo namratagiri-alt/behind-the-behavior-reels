@@ -1,0 +1,91 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R078",
+ "title": "7 thinking traps that run your choices",
+ "series": "Psychology you can use",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "illustration": "desk",
+   "say": "Seven thinking traps run your choices.",
+   "data": {
+    "lines": [
+     "7 thinking traps",
+     "run your choices."
+    ],
+    "accent": [
+     "7"
+    ],
+    "size": 104
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "say": "Shortcuts save effort. Sometimes they decide for you.",
+   "data": {
+    "left": {
+     "label": "Usually",
+     "text": "Shortcuts save effort"
+    },
+    "right": {
+     "label": "Sometimes",
+     "text": "They decide for you"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "stack",
+   "illustration": "shelf",
+   "say": "One, anchoring. First numbers set the bar. Two, confirmation bias. You see what agrees. Three, sunk cost. Spending keeps you going.",
+   "data": {
+    "items": [
+     "Anchoring",
+     "Confirmation bias",
+     "Sunk cost"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "illustration": "calendar",
+   "say": "Four, framing. The wording changes the choice. Five, planning fallacy. Tasks take longer than you think. Six, present bias. Today keeps winning. Seven, illusory truth. Repeated feels true.",
+   "data": {
+    "items": [
+     "Framing",
+     "Planning fallacy",
+     "Present bias",
+     "Illusory truth"
+    ],
+    "start": 4
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "illustration": "desk",
+   "say": "Pick the one that catches you most, and notice it once this week. The fix for each is in our latest carousel.",
+   "data": {
+    "text": "Which trap catches you most?",
+    "accent": [
+     "most?"
+    ],
+    "kicker": "Save this. Fixes in our carousel",
+    "size": 90
+   }
+  }
+ ],
+ "cover": {
+  "headline": "7 thinking traps that run your choices",
+  "accent": [
+   "traps"
+  ],
+  "sub": "Shortcuts that decide for you"
+ }
+}
