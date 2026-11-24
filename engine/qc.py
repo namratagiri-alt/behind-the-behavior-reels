@@ -37,7 +37,7 @@ def qc(outdir, rid):
     last = sc[-1]
     checks.update({
         "structure_roles_in_order": roles == sorted(roles, key=lambda r: ["hook", "setup", "proof", "takeaway"].index(r) if r in ("hook", "setup", "proof", "takeaway") else 9) and set(roles) >= {"hook", "setup", "proof", "takeaway"},
-        "hook_voice_within_3s": bool(hooks) and hooks[-1]["voice_end"] <= 3.2,
+        "hook_voice_within_2s": bool(hooks) and hooks[-1]["voice_end"] <= 2.4,
         "hook_has_on_screen_text": bool(hooks) and all(h["on_screen_text"] for h in hooks),
         "setup_ends_by_16s": bool(setup) and 10 <= setup[-1]["end"] <= 16.5,
         "proof_covers_15_to_25s": bool(proof) and proof[0]["start"] <= 16.5 and proof[-1]["end"] >= 24,

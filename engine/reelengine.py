@@ -40,6 +40,7 @@ def font(k, size):
 SAFE_TOP, SAFE_BOTTOM = 230, H - 430
 CAPTION_Y = 1365
 SCENE_DY = 120
+SIGNOFF = "Understand the pattern. Change the response."
 
 def ease(x):
     x = max(0.0, min(1.0, x)); return 1 - (1 - x) ** 3
@@ -386,6 +387,11 @@ def sc_question(d, t, D, data):
         q = prog(t, D * 0.55, 0.5)
         fk = font("sans_s", 36); s = data["kicker"].upper()
         d.text(((W - text_w(fk, s)) // 2, end + 70), s, font=fk, fill=rgba(PAL["accent"], q))
+    if data.get("_last") and data.get("signoff", SIGNOFF):
+        q = prog(t, D * 0.62, 0.6)
+        fs = font("serif_i", 46); so = data.get("signoff", SIGNOFF)
+        d.line([W // 2 - 60, 1060, W // 2 + 60, 1060], fill=rgba(PAL["dim"], q), width=2)
+        d.text(((W - text_w(fs, so)) // 2, 1085), so, font=fs, fill=rgba(PAL["muted"], q))
 
 SCENES = {"headline": sc_headline, "compare": sc_compare, "axis": sc_axis, "bars": sc_bars,
           "countdown": sc_countdown, "stack": sc_stack, "chain": sc_chain, "split": sc_split,
@@ -583,7 +589,7 @@ def build(spec_path, outdir):
                 lt = t - s["start"]; D = s["end"] - s["start"]
                 fade_out = 1 - prog(lt, D - 0.22, 0.22) if s is not scenes[-1] else 1
                 sl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(sl)
-                SCENES[s["type"]](sd, lt, D, {**s.get("data", {}), "_fast": s.get("role") == "hook"})
+                SCENES[s["type"]](sd, lt, D, {**s.get("data", {}), "_fast": s.get("role") == "hook", "_last": s is scenes[-1]})
                 if fade_out < 1:
                     alpha = sl.getchannel("A").point(lambda v: int(v * fade_out)); sl.putalpha(alpha)
                 sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sh.paste(sl, (0, SCENE_DY)); layer = Image.alpha_composite(layer, sh); d = ImageDraw.Draw(layer)

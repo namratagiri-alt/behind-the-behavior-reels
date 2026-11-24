@@ -130,3 +130,42 @@ Same rule: a Reel's core claim rests on Tier 1 or 2. Books give ideas and framin
 | Thinking, Fast and Slow | 2 | Strong for hiring and evaluation judgment (structured vs intuitive judgment); see part 1 cautions. |
 | Dare to Lead (Brene Brown) | 3 | Based on qualitative research; inspirational framing. Use for themes, not causal claims. |
 | Drive (Daniel Pink) | 3 | See above. |
+
+## Content system v2 (added 25 Nov 2026 from Namrata; supersedes earlier pillar and structure notes)
+
+### Five content pillars (every Reel belongs to one; rotate them)
+| Pillar | Core question | Example topics |
+|---|---|---|
+| Habits and behaviour | Why do we repeat actions? | habit loops, environment design, procrastination, dopamine myths |
+| Thinking and decisions | Why do we choose poorly? | confirmation bias, loss aversion, sunk cost, overthinking |
+| Perception and attention | Why do we see situations differently? | selective attention, framing, illusions, first impressions |
+| Social influence | Why do we conform or persuade? | social proof, conformity, authority, groupthink, persuasion |
+| Emotions and relationships | Why do we react this way? | emotion regulation, attachment, conflict, boundaries, empathy |
+Money, work, parenting and relationships are contexts inside these pillars (tracker column "Context"), not separate pillars.
+
+### Structure: explain, example, apply (enforced by qc.py)
+- Hook, 0 to 2 s: a specific problem, surprising claim, number or visual change, 5 to 7 spoken words, same idea as on-screen text. No intros.
+- Explain, about 2 to 15 s: the mechanism in plain language.
+- Example, about 15 to 25 s: one everyday situation; use Indian and global everyday scenarios (salary credit day, family WhatsApp group, festival sales, office meetings, commutes, exams).
+- Apply, last 5 to 8 s: one small, realistic action plus one engagement prompt ("Save this for your next salary day"). The engine adds the fixed sign-off "Understand the pattern. Change the response." to the closing scene.
+- Total 30 to 45 s by topic (QC limit) unless Namrata changes it.
+- Spec roles stay hook / setup / proof / takeaway (setup = explain, proof = example or evidence, takeaway = apply).
+
+### Language and credibility
+- Careful wording: "research suggests", "one explanation is", "it may help". Never "this proves", "everyone does this", "this will fix your life".
+- Cite briefly on screen when a number is shown (bars "source" field) and always in the caption (author, year, journal).
+- Debunk myths with evidence (series "Myth vs reality"). Never diagnose, never present pop-psychology labels as fact.
+
+### Shareability (Instagram says its most important Reels predictions are reshare, full watch-through and like)
+- Every Reel needs a clear reason to send or save it, stated in the closing kicker or caption.
+- One focused question in the caption.
+- Subtitles always on (engine does this).
+
+### Format risk to manage
+Instagram says it may show fewer Reels that are "majority text", low-resolution or watermarked. Our Reels are mostly animated text with a small logo. Until Namrata decides otherwise: keep on-screen words short (headline lines of 2 to 4 words where possible), prefer diagram, chart, chat, split and countdown scenes over plain headline scenes (no more than 2 headline scenes per Reel), and watch reach per Reel in the weekly review.
+
+### Master tracker (always at least 30 ideas)
+- tracker.csv in this repo is the master. Columns include status, pillar, context, hook, action, score, evidence anchors and cautions, slot, published time, media id, metrics (views, reach, average watch time, shares, saves, comments, profile visits, follows), insights and "Namrata notes".
+- Statuses: Idea, Idea (needs evidence review), In production, Published, Held, Skipped (with reason in Insights).
+- Every production run updates its row. The weekly run fills metrics and insights and tops the queue back up to at least 30 eligible ideas (score 32+, evidence 3+), balanced across the five pillars.
+- After updating tracker.csv, refresh the Google Sheet mirror "Behind the Behavior content tracker" in Drive folder 1ROYeqQaeVbXT97IycGYPsRvj0d6Azd1i: first read the current mirror and copy any text Namrata added in the "Namrata notes" column into tracker.csv, then upload tracker.csv as a new Google Sheet with the same name and trash the previous mirror.
