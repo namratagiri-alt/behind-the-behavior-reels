@@ -200,3 +200,7 @@ jsDelivr refuses new files (HTTP 403, "Package size exceeded the configured limi
 - In the commit that adds a new media/<ID>.mp4, `git rm` every other media/*.mp4 whose Reel is already published (they stay recoverable in git history). Never remove an MP4 that is not yet published.
 - Before pushing, check `du -sh --exclude=.git .` is under 40 MB. If carousel JPEGs or covers push it near that, prune published ones the same way.
 - Always confirm each jsDelivr URL returns 200 with the right content type before publishing. If jsDelivr still fails, raw.githubusercontent.com commit-pinned URLs work for JPEGs (used for C001 on 25 Nov). They serve MP4s as application/octet-stream, which is untested with Instagram, so for video, fix the size and use jsDelivr.
+
+
+## Account handle
+On 25 Nov 2026 the Instagram handle changed from @purpllewave to @whats.behind.the.behavior. Same account, Windsor.ai id 17841476377023976. The rename invalidated Windsor's session; it was reconnected via the Facebook Login link the same day. A future rename or password change will do the same: reconnect via Windsor's Facebook Login link (replace_instagram_login=17841476377023976).
