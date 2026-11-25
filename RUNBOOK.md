@@ -1,6 +1,6 @@
 # Behind the Behavior: production and publishing runbook
 
-This is the operating manual for every scheduled run. The master editorial brief is the project doc "AUTONOMOUS PSYCHOLOGY REELS CONTENT STUDIO". Its rules on scientific accuracy, ethics and storytelling override anything here.
+This is the operating manual for every scheduled run. The master editorial brief is Namrata's project doc "AUTONOMOUS PSYCHOLOGY REELS CONTENT STUDIO"; its essentials are consolidated below in "Master brief essentials", so runs do not depend on being able to open that doc. Its rules on scientific accuracy, ethics and storytelling override anything else here.
 
 ## Fixed locations
 
@@ -162,7 +162,7 @@ Money, work, parenting and relationships are contexts inside these pillars (trac
 - Subtitles always on (engine does this).
 
 ### Format risk to manage
-Instagram says it may show fewer Reels that are "majority text", low-resolution or watermarked. Our Reels are mostly animated text with a small logo. Until Namrata decides otherwise: keep on-screen words short (headline lines of 2 to 4 words where possible), prefer diagram, chart, chat, split and countdown scenes over plain headline scenes (no more than 2 headline scenes per Reel), and watch reach per Reel in the weekly review.
+Instagram says it may show fewer Reels that are "majority text", low-resolution or watermarked. Our Reels mix animated text, diagrams and illustrated scenes (no watermark). Until Namrata decides otherwise: keep on-screen words short (headline lines of 2 to 4 words where possible), prefer diagram, chart, chat, split and countdown scenes over plain headline scenes (no more than 2 headline scenes per Reel), and watch reach per Reel in the weekly review.
 
 ### Master tracker (always at least 30 ideas)
 - tracker.csv in this repo is the master. Columns include status, pillar, context, hook, action, score, evidence anchors and cautions, slot, published time, media id, metrics (views, reach, average watch time, shares, saves, comments, profile visits, follows), insights and "Namrata notes".
@@ -204,3 +204,59 @@ jsDelivr refuses new files (HTTP 403, "Package size exceeded the configured limi
 
 ## Account handle
 On 25 Nov 2026 the Instagram handle changed from @purpllewave to @whats.behind.the.behavior. Same account, Windsor.ai id 17841476377023976. The rename invalidated Windsor's session; it was reconnected via the Facebook Login link the same day. A future rename or password change will do the same: reconnect via Windsor's Facebook Login link (replace_instagram_login=17841476377023976).
+
+
+## Master brief essentials (consolidated 25 Nov 2026 from "AUTONOMOUS PSYCHOLOGY REELS CONTENT STUDIO")
+Read this before choosing or writing any Reel or carousel. It overrides other sections where they conflict, except Namrata's later explicit decisions (30 to 45 s length, two Reels a day, five pillars, sign-off, watermark off).
+
+### Positioning: the differentiator
+- Central proposition: the invisible psychology behind everyday life. The viewer should think "I've experienced this, but I never understood why it happens."
+- The central creative question for every piece: what invisible psychological process is operating here, and how do we make the viewer recognize it in their own life?
+- Brand personality: intelligent, observant, surprising, accessible, occasionally provocative. Like a behavioral science publication turned into short visual stories. No motivational cliches, simplistic life advice, exaggerated self-help claims or recycled psychology trivia.
+- Psychological intersections are the main differentiator. Explore both single mechanisms and two or more mechanisms that interact (reinforce, contradict or moderate each other), for example: sale purchase = anchoring + transaction utility + anticipated regret; checking work messages at night = variable reinforcement + workplace norms + anticipated consequences; defending a poor decision = cognitive dissonance + sunk cost + self-image protection. Never force several concepts in; scientific coherence beats complexity. Aim for most Reels in a week to carry a genuine intersection.
+- For each topic answer: what observable behavior are we explaining; which principle is most relevant; is a second one needed; do they reinforce, contradict or moderate; what research supports it; what alternative explanations exist; what makes it surprising, practical or discussion-worthy.
+
+### Territories inside the five pillars
+Use these as the "Context" column and to keep variety: social, behavioral, cognitive, consumer, retail, workplace, leadership, employee, parenting, child and adolescent, relationship, family and household (invisible labor, mental load, decision fatigue), money, digital (notifications, comparison, online identity), emotional (guilt, shame, regret, jealousy, anticipation), everyday decisions (procrastination, choice overload, self-justification). Examples should span life stages and roles without stereotyping by gender, occupation, family structure or age.
+
+### Topic selection
+- Prioritize: everyday relevance, a surprising or counterintuitive explanation, a recognizable real-life scenario, credible evidence, visual storytelling potential, and a reason to save, share or discuss.
+- Reject generic or famous-term-definition topics. Weak: "5 signs you are intelligent", "3 types of toxic people", "Psychology says never trust these people", "7 tricks to make anyone like you". Strong: "Why competent people underestimate how much others know", "Why praise can make someone more anxious about their next performance", "Why neutral messages feel negative when we are uncertain", "Why we mistake familiarity for quality", "Why a child can understand a rule but not follow it when overwhelmed".
+- Originality check before approving: fresh example, real intersection, overlooked consequence or stronger explanation than common content. Never copy another creator's scripts, storytelling or visuals.
+- Do not publish consecutive pieces about essentially the same bias.
+
+### Storytelling formats (record in the tracker "Format" column; never 5 in a row with the same formula)
+A The Invisible Reason (familiar action, then the hidden psychology). B Two Psychological Forces (competing or reinforcing mechanisms; a metaphor, not a brain-region claim). C One Situation, Two Reactions (same event, different interpretation). D Psychology in Action (viewer recognizes the behavior before the concept is named). E The Psychology of a Decision (reconstruct the mental steps). F Counterintuitive Psychology (challenge an assumption with evidence, no absolute claims). G The Psychological Chain Reaction (one response triggers the next; the chain scene fits). H The Human Behavior Case Study (clearly fictional or clearly documented, never blurred). I Psychology You Can Use (practical, not a universal fix). J The Hidden Social Rule (unwritten norms in families, work, shopping, friendships).
+Engine scene hints: B and C use split or compare; G uses chain; E uses chain or axis; D uses chat; F uses bars with a source.
+
+### Script quality rules
+- Write three hooks; pick the clearest, most relevant, most original. The hook must be something the script fully delivers; no clickbait.
+- Recognition before terminology: show the situation before naming the concept. Do not spend half the Reel defining terms.
+- Each sentence must advance the explanation; one central narrative thread; concrete behavior over abstractions; tension between expectation and reality where useful; no padding to reach a length.
+- Endings: one natural ending (thoughtful question, useful takeaway, surprising observation, reason to save, new perspective). No robotic or repetitive engagement bait.
+- Recurring series names from the brief, usable as the "Series" label alongside the curiosity series: The Psychology Behind It; Two Forces, One Decision; Why We Do That; The Psychology of Buying; What Your Workplace Is Teaching You; Inside the Parent-Child Dynamic; The Invisible Rules of Human Behavior; Your Brain at Work; The Decision You Didn't Notice Making.
+
+### Creative score (tracker "Score /40")
+Score 1 to 5 on each: Curiosity, Recognition, Psychological depth, Evidence, Originality, Storytelling, Shareability, Visual potential. Equal weights, maximum 40. Produce only 32+ with Evidence 3 or more. It is a working editorial rule, not a predictor of virality.
+
+### Scientific credibility (non-negotiable)
+- Identify the core claim; find primary research, systematic reviews or reputable academic sources; separate well-supported findings from emerging, contested or popular interpretations; check the finding generalizes to the scenario; note caveats and competing explanations; verify every number, named study and quote.
+- Keep a source log for every Reel: record sources with URLs and what each supports in the tracker "Evidence anchors" column (and "Evidence cautions" for caveats).
+- Never invent studies, statistics, neuroscience, quotes or terms. Never label people as narcissists, sociopaths, psychopaths or mentally ill. Never diagnose from an ordinary behavior. Never imply one universal cause. If evidence is limited, qualify or choose a stronger topic.
+
+### Ethical guardrails
+- Never present manipulation, coercive control or exploitation as desirable. Sales, pricing and persuasion content explains how mechanisms work; it never teaches deceptive targeting of vulnerable people.
+- Parenting and children: no blaming or shaming parents or children; no diagnoses from isolated behavior; acknowledge developmental and contextual variation; protect children's privacy; never portray real children as having conditions.
+- Workplace: distinguish individual behavior from organizational conditions; do not stereotype managers or employees; never frame unethical management tactics as acceptable.
+- Relationships and social: no universal gender differences; theories are not mind-reading tools; separate hypotheses about behavior from verified motives.
+- All: no plagiarism, no unlicensed audio or images, follow AI-content labeling ("Voiceover is AI-generated."), never promise clinical, psychological or financial outcomes.
+
+### Starter concept list from the brief (validate before use; generate stronger alternatives when needed)
+50% discount spending (anchoring, transaction value, anticipated regret); guilt about free time (internalized norms, self-worth, productivity expectations); a manager's silence feeling worse than criticism (ambiguity, threat appraisal); trusting expensive products more (price-quality inference, signaling); refreshing an app expecting nothing (checking routines, unpredictable rewards, cues); hard to leave a bad investment (sunk cost, loss aversion, self-justification); children struggling with transitions (self-regulation, predictability, autonomy); the dependable person who cannot delegate (role identity, perceived control); choosing nothing from too many options (choice overload, including when it does and does not occur); trusting a familiar false claim (fluency, repetition); rejecting useful feedback (identity threat, trust, psychological safety); defending a purchase after paying (cognitive dissonance, post-purchase rationalization).
+
+### Production and distribution standards from the brief
+- Premium editorial look, restrained typography, consistent palette, motion only where it aids attention or understanding; essential text inside safe areas; every scene adds meaning; no unrelated footage.
+- QC before publishing also covers: spelling, correct visual representation of the concept, misleading statements, excessive text, opening-frame clarity, abrupt endings.
+- Caption adds context beyond the voiceover; natural search phrases when they apply (behavioral psychology, decision-making, consumer psychology, workplace behavior, parenting psychology); a few specific hashtags; source attribution.
+- Never mark anything published until the platform confirms; no duplicate posts on retry; no purchases or paid upgrades without Namrata's approval.
+- Success is not posting consistently. It is viewers recognizing hidden patterns in their own behavior, learning something useful, and coming back because each video rewards their attention.
