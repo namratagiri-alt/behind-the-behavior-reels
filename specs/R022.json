@@ -1,0 +1,124 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R022",
+ "title": "Why you think everyone noticed your mistake",
+ "series": "Why we do that",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "illustration": "meeting",
+   "say": "You think everyone noticed. Most didn't.",
+   "data": {
+    "lines": [
+     "Everyone noticed?",
+     "Most didn't."
+    ],
+    "accent": [
+     "didn't."
+    ],
+    "size": 108
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "illustration": "meeting",
+   "say": "It's called the spotlight effect. Your moment feels huge, so you assume everyone is watching it too.",
+   "data": {
+    "left": {
+     "label": "You feel",
+     "text": "Everyone saw it"
+    },
+    "right": {
+     "label": "Others",
+     "text": "Busy with their own day"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chain",
+   "say": "One explanation: you start from your own feelings and don't adjust enough for everyone else.",
+   "data": {
+    "items": [
+     "Strong feeling",
+     "Feels obvious",
+     "Overestimate"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "say": "In one Cornell study, students wore an embarrassing T-shirt into a room. They guessed about half would notice. Only 23 percent did.",
+   "data": {
+    "title": "Who noticed the T-shirt?",
+    "source": "Gilovich, Medvec & Savitsky 2000, JPSP",
+    "bars": [
+     {
+      "label": "Wearers' guess",
+      "value": 0.46,
+      "display": "46%"
+     },
+     {
+      "label": "Actually noticed",
+      "value": 0.23,
+      "display": "23%",
+      "hi": true
+     }
+    ],
+    "footer": "Half the attention they feared."
+   }
+  },
+  {
+   "role": "proof",
+   "type": "chat",
+   "illustration": "phone",
+   "say": "Like a typo in the family WhatsApp group. You cringe all evening. Others are probably busy with their own day.",
+   "data": {
+    "messages": [
+     {
+      "from": "me",
+      "text": "Happy birthday Mausi! Have a grate day",
+      "meta": "9:02 AM"
+     },
+     {
+      "from": "me",
+      "text": "*great",
+      "meta": "9:02 AM"
+     },
+     {
+      "from": "them",
+      "text": "Thank you beta!",
+      "meta": "9:15 AM"
+     }
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "illustration": "night",
+   "say": "Next time, ask: would I even notice if they did this? Save this for your next awkward moment.",
+   "data": {
+    "text": "Would you notice if they did it?",
+    "accent": [
+     "they"
+    ],
+    "kicker": "Save this for your next awkward moment",
+    "size": 88
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why you think everyone noticed your mistake",
+  "accent": [
+   "everyone"
+  ],
+  "sub": "The spotlight effect"
+ }
+}
