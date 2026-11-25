@@ -1,0 +1,36 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R051",
+ "title": "Why 'most people' changes your choice",
+ "series": "The invisible rules of human behavior",
+ "scenes": [
+  {"role": "hook", "type": "headline", "illustration": "night",
+   "say": "One sentence made guests reuse towels.",
+   "data": {"lines": ["One sentence.", "More towels reused."], "accent": ["sentence."], "size": 104}},
+  {"role": "setup", "type": "split", "illustration": "night",
+   "say": "Researchers tested two hotel signs. One said help the environment. The other said most guests reuse their towels.",
+   "data": {"left": {"label": "Sign A", "text": "Help save the environment"}, "right": {"label": "Sign B", "text": "Most guests here reuse towels"}}},
+  {"role": "setup", "type": "chain",
+   "say": "One explanation is social proof. When we're unsure, other people's choices feel like a guide to what's normal.",
+   "data": {"items": ["Unsure what to do", "Look at others", "Follow the majority"]}},
+  {"role": "proof", "type": "bars",
+   "say": "The most guests sign lifted towel reuse from about 35 to 44 percent.",
+   "data": {"title": "Guests who reused towels", "source": "Goldstein, Cialdini & Griskevicius 2008, J Consumer Research",
+            "bars": [{"label": "Environment sign", "value": 0.351, "display": "35%"},
+                     {"label": "'Most guests' sign", "value": 0.441, "display": "44%", "hi": true}],
+            "footer": "Same request. Different reason."}},
+  {"role": "proof", "type": "chat", "illustration": "phone",
+   "say": "It's why the restaurant with a queue feels safer. The crowd seems like information, even when everyone's just copying.",
+   "data": {"messages": [
+     {"from": "them", "text": "Where should we eat tonight?", "meta": "7:41 PM"},
+     {"from": "me", "text": "The one with the long queue. Must be good", "meta": "7:42 PM"},
+     {"from": "them", "text": "Did anyone actually try it?", "meta": "7:42 PM"}]}},
+  {"role": "takeaway", "type": "question", "illustration": "shelf",
+   "say": "Next time, ask if the crowd's reason fits you. Send this to your queue-loving friend.",
+   "data": {"text": "Does the crowd's reason fit you?", "accent": ["you?"], "kicker": "Send this to your queue-loving friend", "size": 88}}
+ ],
+ "cover": {"headline": "Why 'most people' changes your choice", "accent": ["most people'"], "sub": "Social proof"}
+}
