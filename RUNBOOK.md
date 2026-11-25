@@ -260,3 +260,6 @@ Score 1 to 5 on each: Curiosity, Recognition, Psychological depth, Evidence, Ori
 - Caption adds context beyond the voiceover; natural search phrases when they apply (behavioral psychology, decision-making, consumer psychology, workplace behavior, parenting psychology); a few specific hashtags; source attribution.
 - Never mark anything published until the platform confirms; no duplicate posts on retry; no purchases or paid upgrades without Namrata's approval.
 - Success is not posting consistently. It is viewers recognizing hidden patterns in their own behavior, learning something useful, and coming back because each video rewards their attention.
+
+### Queue balance to fix (audit 25 Nov 2026)
+Of 69 queued ideas, 54 carry a genuine intersection (good). Formats lean on A (21) and F (18); B, E, G, H and J have 2 to 4 each. Contexts are mostly Everyday, Work, Relationships and Money; Parenting has 1 and family/household, digital and retail/consumer are thin. The weekly review should add ideas in the underused formats and territories (all with careful sourcing; child topics follow the parenting guardrails) and production runs should prefer them when scores tie.
