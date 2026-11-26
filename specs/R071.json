@@ -1,0 +1,30 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R071",
+ "title": "Why you tidy your desk instead of the hard task",
+ "series": "Have you wondered?",
+ "scenes": [
+  {"role": "hook", "type": "headline", "illustration": "desk",
+   "say": "You organized everything except the task.",
+   "data": {"lines": ["Everything organized.", "Except the task."], "accent": ["task."], "size": 100}},
+  {"role": "setup", "type": "split", "illustration": "desk",
+   "say": "A report is due. Suddenly the desk needs tidying, the inbox needs sorting, and the pens need lining up.",
+   "data": {"left": {"label": "The task", "text": "Write the report"}, "right": {"label": "What you do", "text": "Tidy, sort, line up pens"}}},
+  {"role": "setup", "type": "chain",
+   "say": "One explanation: the hard task brings boredom or self-doubt. Tidying makes that feeling fade, so it feels like progress.",
+   "data": {"items": ["Hard task", "Uneasy feeling", "Tidy instead", "Quick relief"]}},
+  {"role": "proof", "type": "split", "illustration": "calendar",
+   "say": "A classic study tracked students across a term. Procrastinators felt less stressed early on, then more stressed and sicker later, with lower grades.",
+   "data": {"left": {"label": "Early in term", "text": "Less stress"}, "right": {"label": "Late in term", "text": "More stress, lower grades"}}},
+  {"role": "proof", "type": "stack", "illustration": "night",
+   "say": "Researchers describe it as choosing your mood now over your future self. The relief is real. It just doesn't last.",
+   "data": {"items": ["Mood now: better", "Task: still waiting", "Future you: pressure"]}},
+  {"role": "takeaway", "type": "question", "illustration": "desk",
+   "say": "Try a two-minute version first. Open the file, write one line. Save this for your next deadline.",
+   "data": {"text": "What's the two-minute version?", "accent": ["two-minute"], "kicker": "Save this for your next deadline", "size": 86}}
+ ],
+ "cover": {"headline": "Why you tidy your desk instead of the hard task", "accent": ["tidy"], "sub": "Procrastination as mood repair"}
+}
