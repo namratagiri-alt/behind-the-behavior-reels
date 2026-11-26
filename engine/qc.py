@@ -45,6 +45,14 @@ def qc(outdir, rid):
         "max_2_headline_scenes": sum(1 for x in sc if x["type"] == "headline") <= 2,
         "takeaway_last_5_to_8s": last.get("role") == "takeaway" and 5 <= (last["end"] - last["start"]) <= 8.5,
     })
+    # first frame must already show the hook (text visible on frame 1)
+    def _bright(ts):
+        pth = f"/tmp/{rid}_ff.png"
+        run(["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{ts:.2f}", "-i", mp4, "-frames:v", "1", pth])
+        im = Image.open(pth).convert("L").crop((60, 330, 1020, 1300))
+        return sum(im.histogram()[171:])
+    b0 = _bright(0.0); b1 = _bright(max(0.5, hooks[-1]["end"] - 0.3) if hooks else 1.0)
+    checks["first_frame_shows_hook"] = b1 > 0 and b0 >= 0.6 * b1
     # contact sheet: midpoint and late point of each scene
     times = []
     for s in tl["scenes"]:

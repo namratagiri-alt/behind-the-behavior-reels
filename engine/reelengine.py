@@ -591,7 +591,7 @@ def build(spec_path, outdir):
                     lt_ = t - s_["start"]; D_ = s_["end"] - s_["start"]
                     same_prev = si > 0 and scenes[si - 1].get("illustration") == ill
                     same_next = si + 1 < len(scenes) and scenes[si + 1].get("illustration") == ill
-                    q = (1 if same_prev else prog(lt_, 0, 0.5)) * (1 if (same_next or si == len(scenes) - 1) else 1 - prog(lt_, D_ - 0.3, 0.3))
+                    q = (1 if (same_prev or si == 0) else prog(lt_, 0, 0.5)) * (1 if (same_next or si == len(scenes) - 1) else 1 - prog(lt_, D_ - 0.3, 0.3))
                     if q < 0.999:
                         crop.putalpha(crop.getchannel("A").point(lambda v, q=q: int(v * q)))
                     frame.alpha_composite(crop)
@@ -610,7 +610,8 @@ def build(spec_path, outdir):
                 lt = t - s["start"]; D = s["end"] - s["start"]
                 fade_out = 1 - prog(lt, D - 0.22, 0.22) if s is not scenes[-1] else 1
                 sl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(sl)
-                SCENES[s["type"]](sd, lt, D, {**s.get("data", {}), "_fast": s.get("role") == "hook", "_last": s is scenes[-1]})
+                # hook: start fully drawn on frame 1 (first frame decides the swipe)
+                SCENES[s["type"]](sd, lt + (0.6 if s is scenes[0] else 0), D + (0.6 if s is scenes[0] else 0), {**s.get("data", {}), "_fast": s.get("role") == "hook", "_last": s is scenes[-1]})
                 if fade_out < 1:
                     alpha = sl.getchannel("A").point(lambda v: int(v * fade_out)); sl.putalpha(alpha)
                 sh = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sh.paste(sl, (0, SCENE_DY)); layer = Image.alpha_composite(layer, sh); d = ImageDraw.Draw(layer)
