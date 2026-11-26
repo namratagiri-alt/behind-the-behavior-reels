@@ -1,0 +1,33 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R054",
+ "title": "Why you replay conversations at night",
+ "series": "Why we do that",
+ "scenes": [
+  {"role": "hook", "type": "headline", "illustration": "night",
+   "say": "They liked you more than you think.",
+   "data": {"lines": ["They liked you", "more than you think."], "accent": ["more"], "size": 96}},
+  {"role": "setup", "type": "split", "illustration": "night",
+   "say": "After meeting someone new, many of us replay the awkward bits at night. Did I talk too much? Was that joke weird?",
+   "data": {"left": {"label": "You replay", "text": "Did I talk too much?"}, "right": {"label": "They felt", "text": "That was a nice chat"}}},
+  {"role": "setup", "type": "chain",
+   "say": "Researchers call this the liking gap. One explanation: you are busy judging your own performance, so you miss the signs they liked you.",
+   "data": {"items": ["New conversation", "Judge yourself", "Miss their signals", "Underestimate"]}},
+  {"role": "proof", "type": "bars",
+   "say": "In one Yale study, strangers chatted for about five minutes. Afterward, people underestimated how much their partner liked them.",
+   "data": {"title": "How much did they like you?", "source": "Boothby et al. 2018, Psychological Science", "bars": [{"label": "Your guess", "value": 0.74, "display": "5.2 / 7"}, {"label": "Their actual rating", "value": 0.83, "display": "5.8 / 7", "hi": true}], "footer": "Average ratings, Study 1a"}},
+  {"role": "proof", "type": "chat", "illustration": "phone",
+   "say": "Say you have lunch with a new colleague. All night you replay every pause. Next morning, they message first.",
+   "data": {"messages": [{"from": "me", "text": "Sorry, I went on about my old job yesterday", "meta": "9:10 AM"}, {"from": "them", "text": "What? Best lunch all week. Same time Friday?", "meta": "9:12 AM"}]}},
+  {"role": "proof", "type": "stack", "illustration": "meeting",
+   "say": "Across five studies, the gap showed up with lab strangers, workshop groups, and new college suitemates, where it lasted for months.",
+   "data": {"items": ["Strangers in a lab", "Workshop groups", "Suitemates: months"]}},
+  {"role": "takeaway", "type": "question", "illustration": "night",
+   "say": "Next time, assume it went a little better than it felt. Send this to the friend who replays every chat.",
+   "data": {"text": "What if it went better than it felt?", "accent": ["better"], "kicker": "Send this to the friend who replays every chat", "size": 84}}
+ ],
+ "cover": {"headline": "Why you replay conversations at night", "accent": ["replay"], "sub": "The liking gap"}
+}
