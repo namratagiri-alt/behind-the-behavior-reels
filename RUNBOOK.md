@@ -263,3 +263,66 @@ Score 1 to 5 on each: Curiosity, Recognition, Psychological depth, Evidence, Ori
 
 ### Queue balance to fix (audit 25 Nov 2026)
 Of 69 queued ideas, 54 carry a genuine intersection (good). Formats lean on A (21) and F (18); B, E, G, H and J have 2 to 4 each. Contexts are mostly Everyday, Work, Relationships and Money; Parenting has 1 and family/household, digital and retail/consumer are thin. The weekly review should add ideas in the underused formats and territories (all with careful sourcing; child topics follow the parenting guardrails) and production runs should prefer them when scores tie.
+
+## Reach and discovery playbook (added 26 Nov 2026; applies to every Reel and carousel)
+Goal: give each post the best chance of being recommended to non-followers and found in search. Nothing guarantees virality; these rules remove avoidable handicaps and stack the known signals. Never trade scientific accuracy or the ethical guardrails for reach.
+
+### What Instagram ranks on (stated by Instagram's head, Adam Mosseri)
+1. Watch time and completion, including replays. 2. Sends per reach (DM shares) for reaching non-followers. 3. Likes per reach. Originality is weighted more heavily over time (reposted or aggregated content is demoted). Hashtags do not increase reach; they label topic. Max 5 hashtags per post since Dec 2025. Search matches the typed text to usernames, profile names, bios, captions, hashtags and places.
+
+### Build every Reel for watch time
+- Frame 1 must already show the hook text (no fade-in from black, no logo intro). Hook voiced by 2.4 s (qc enforces).
+- Open a loop in the hook that is only closed in the takeaway (a question, a number, "the third one is why"), so viewers stay to the end.
+- Visual change every 2 to 4 s (scene change, item reveal, chart build); no static stretches over 5 s.
+- End so the last frame flows back into the first (the closing question echoes the hook) to encourage replays. Keep the 30 to 45 s range; shorter (30 to 35 s) when the idea allows, because completion is a ratio.
+
+### Build every post for sends (the strongest non-follower signal)
+- Each Reel needs a specific "send it to someone" reason: a named person or situation ("Send this to the friend who says 'just five more minutes'", "...the colleague who replies at 11 pm", "...your partner before your next money talk"). Put it in the takeaway kicker or the caption, not both identically. Vary wording; never generic "share this".
+- Prefer topics with a social object: something people recognize in a friend, partner, parent, boss or group chat. Score Shareability honestly.
+
+### Search keywords (caption first line, hook, spoken line, alt text)
+- Pick ONE primary keyword phrase per post from the bank below (or a closer phrase from research). Use it naturally: in the caption's first sentence (written like a search query or a direct answer), in the on-screen hook or first scene where it fits, in the first spoken sentence where natural, and in carousel alt text. Never stuff; one phrase plus one related phrase.
+- Record it in the tracker "Insights" cell as "kw: <phrase>" so the weekly review can compare.
+- Keyword bank by pillar (likely search phrases; volumes unverified, check with Instagram search autocomplete when possible):
+  - Thinking and decisions: psychology of decision making; cognitive bias; why we overthink; sunk cost fallacy; decision fatigue; psychology of money.
+  - Habits and behaviour: how to break bad habits; habit psychology; why I procrastinate; procrastination psychology; phone addiction (topic only, never a diagnosis); self control.
+  - Perception and attention: psychology facts; why we misjudge people; first impression psychology; spotlight effect; what others think of you.
+  - Social influence: social psychology; peer pressure; why we follow the crowd; people pleasing; persuasion psychology; FOMO.
+  - Emotions and relationships: relationship psychology; why couples fight; communication in relationships; emotional intelligence; setting boundaries; guilt.
+  - Work context: workplace psychology; burnout at work (everyday stress framing only); imposter syndrome (as the searched topic, framed carefully); office politics psychology; feedback at work.
+  - Money context: salary day spending; why I can't save money; impulse buying; sale psychology; consumer psychology (add "Not financial advice.").
+  - Parenting context: parenting psychology; child behavior explained; toddler tantrums psychology (follow parenting guardrails).
+  - Digital context: why I keep checking my phone; social media comparison; notification habits.
+
+### Hashtags (in the caption, never in comments; 4 or 5 total)
+Formula: #behindthebehavior + 1 broad + 2 or 3 specific to the post. No generic reach tags (#viral, #explorepage, #fyp, #trending, #reels).
+- Broad (pick 1): #psychology #psychologyfacts #behavioralscience #humanbehavior
+- Thinking and decisions: #cognitivebias #decisionmaking #criticalthinking #overthinking
+- Habits and behaviour: #habits #procrastination #selfimprovement #productivity
+- Perception and attention: #perception #socialpsychology #firstimpressions #mindset
+- Social influence: #socialpsychology #peerpressure #peoplepleaser #persuasion
+- Emotions and relationships: #relationshippsychology #emotionalintelligence #boundaries #communicationskills
+- Contexts: work #workplacepsychology #worklife; money #moneypsychology #personalfinance #financialhabits; parenting #parentingpsychology #parentingtips; digital #digitalwellbeing #screentime
+Record the set used in the tracker so the weekly review can see which specific tags coincide with search traffic (inference only).
+
+### Caption template (under 2,200 characters; first ~125 characters show before "more")
+1. Line 1: keyword-led hook sentence that adds to the video, not a transcript.
+2. 2 to 4 short lines of insight beyond the voiceover (the intersection, the caveat, the why).
+3. "Try this:" one small action.
+4. The send prompt (specific person or situation) and/or a save reason.
+5. One focused question that invites a real answer (opinions and experiences, not yes/no).
+6. Sources line; "Voiceover is AI-generated."; "Not financial advice." when relevant.
+7. Hashtags (4 or 5) on the last line before the sign-off, then "Understand the pattern. Change the response."
+
+### Originality and quality (eligibility for recommendation)
+- Everything is original: our own scripts, voice, illustrations and graphics. Never repost other creators' clips or audio.
+- 1080x1920, no watermarks, short on-screen text, at most 2 headline scenes (qc enforces). Cover shows a clear curiosity headline.
+
+### Series and consistency
+- Use recurring series labels consistently so returning viewers recognize them. Post on schedule; do not delete underperforming posts (they keep teaching the review).
+
+### Engagement after posting
+- The Instagram connection uses Facebook Login, which cannot reply to comments through Windsor. Namrata replies to comments in the first hour where possible; the weekly review lists comments worth replying to.
+
+### When the account reaches 1,000 followers
+- Trial Reels (shown to non-followers first; Windsor create_video_post supports trial_params) become available. The weekly review should then propose using them for new formats and hook tests. Until then, do not set trial_params.
