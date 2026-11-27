@@ -1,0 +1,115 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R045",
+ "title": "Why you miss things right in front of you",
+ "series": "Why we do that",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "illustration": "commute",
+   "say": "Most phone talkers missed the clown.",
+   "data": {
+    "lines": [
+     "Most phone talkers",
+     "missed the clown."
+    ],
+    "accent": [
+     "clown"
+    ],
+    "size": 96
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chain",
+   "say": "Attention works like a narrow spotlight. What falls outside it can go unseen, even in plain sight.",
+   "data": {
+    "items": [
+     "Narrow spotlight",
+     "Outside goes dim",
+     "Plain sight, unseen"
+    ]
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "illustration": "commute",
+   "say": "It may be why you miss a friend waving at the metro gate while on a call.",
+   "data": {
+    "left": {
+     "label": "You watched",
+     "text": "The metro gate"
+    },
+    "right": {
+     "label": "You missed",
+     "text": "A friend waving"
+    }
+   }
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "illustration": "park",
+   "say": "In one study, a clown rode a unicycle across a campus square. Only a quarter of people on calls noticed. About half of solo walkers did.",
+   "data": {
+    "title": "Noticed the clown",
+    "source": "Hyman et al. 2010, Applied Cognitive Psychology",
+    "bars": [
+     {
+      "label": "On a phone call",
+      "value": 0.25,
+      "display": "25%",
+      "hi": true
+     },
+     {
+      "label": "Walking alone",
+      "value": 0.51,
+      "display": "51%"
+     }
+    ],
+    "footer": "151 walkers, asked after crossing"
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "illustration": "phone",
+   "say": "One explanation: a call pulls attention inward. In the classic gorilla study, about half of viewers missed a gorilla.",
+   "data": {
+    "items": [
+     "Call pulls attention in",
+     "Less left for the street",
+     "Gorilla: half missed it"
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "illustration": "phone",
+   "say": "Meeting someone? End the call before you arrive. Send this to the friend who walks past you mid-call.",
+   "data": {
+    "text": "What did you walk past today?",
+    "accent": [
+     "walk",
+     "past"
+    ],
+    "kicker": "Send to the friend who walks past you mid-call",
+    "size": 84
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why you miss things right in front of you",
+  "accent": [
+   "right",
+   "front"
+  ],
+  "sub": "Inattentional blindness"
+ }
+}
