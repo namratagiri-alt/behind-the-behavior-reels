@@ -1,0 +1,114 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R025",
+ "title": "Why your quick task always takes longer",
+ "series": "The decision you didn't notice making",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "illustration": "desk",
+   "say": "Your quick task was never quick.",
+   "data": {
+    "lines": [
+     "Your quick task",
+     "was never quick."
+    ],
+    "accent": [
+     "never"
+    ],
+    "size": 100
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "illustration": "desk",
+   "say": "You tell your team the slides will take one hour. Three hours later, you are still fixing the fonts.",
+   "data": {
+    "left": {
+     "label": "You said",
+     "text": "One hour"
+    },
+    "right": {
+     "label": "It took",
+     "text": "Three hours"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chain",
+   "say": "Researchers call this the planning fallacy. One explanation: we picture the plan going smoothly, and skip how long past tasks really took.",
+   "data": {
+    "items": [
+     "Picture the plan",
+     "Skip the past",
+     "Best-case guess",
+     "Run late"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "illustration": "calendar",
+   "say": "In one study, final-year students guessed their thesis would take about thirty-four days. On average, it took fifty-five.",
+   "data": {
+    "title": "Days to finish a thesis",
+    "source": "Buehler, Griffin & Ross 1994, JPSP",
+    "bars": [
+     {
+      "label": "Their best guess",
+      "value": 0.61,
+      "display": "33.9 days"
+     },
+     {
+      "label": "Actual time",
+      "value": 1.0,
+      "display": "55.5 days",
+      "hi": true
+     }
+    ],
+    "footer": "Averages, 33 students, Study 1"
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "illustration": "calendar",
+   "say": "Even their worst-case guess was too short. Asked to think aloud, people mostly described future plans, and rarely their past experience.",
+   "data": {
+    "items": [
+     "Worst case: 48.6 days",
+     "Actual: 55.5 days",
+     "Focus: future plans"
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "illustration": "desk",
+   "say": "Next time, plan from how long the last one took. Send this to the friend who is always five minutes away.",
+   "data": {
+    "text": "How long did the last one take?",
+    "accent": [
+     "last"
+    ],
+    "kicker": "Send to your '5 minutes away' friend",
+    "size": 84
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why your quick task always takes longer",
+  "accent": [
+   "longer"
+  ],
+  "sub": "The planning fallacy"
+ }
+}
