@@ -1,0 +1,62 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R020",
+ "title": "Why everyone agrees in the meeting and disagrees after",
+ "series": "The invisible rules of human behavior",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "illustration": "meeting",
+   "say": "Everyone agreed. Nobody actually did.",
+   "data": {"lines": ["Everyone agreed.", "Nobody actually did."], "accent": ["Nobody"], "size": 96}
+  },
+  {
+   "role": "setup",
+   "type": "chain",
+   "illustration": "meeting",
+   "say": "You stay quiet. You see others stay quiet. So you assume they all agree. Psychologists call this pluralistic ignorance.",
+   "data": {"items": ["I stay quiet", "Others stay quiet", "\"So they all agree\""]}
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "illustration": "phone",
+   "say": "Then the real views show up later, in the private chat after the meeting.",
+   "data": {"left": {"label": "In the meeting", "text": "Nods all round"}, "right": {"label": "In the DM", "text": "Wait, really?"}}
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "illustration": "meeting",
+   "say": "In Asch's classic line studies, about three in four people went along with a clearly wrong group answer at least once. Alone, almost nobody got it wrong.",
+   "data": {
+    "title": "Clear line-length task",
+    "source": "Asch 1956, Psychological Monographs",
+    "bars": [
+     {"label": "Went along, 1+ times", "value": 0.75, "display": "About 75%", "hi": true},
+     {"label": "Errors when judging alone", "value": 0.01, "display": "Under 1%"}
+    ],
+    "footer": "Group answers were planted and wrong"
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "illustration": "desk",
+   "say": "At work, one interview study found most employees recalled staying silent about a concern, often to avoid being seen negatively.",
+   "data": {"items": ["34 of 40: silent once", "Top worry: being judged", "Silence looks like consent"]}
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "illustration": "meeting",
+   "say": "Next meeting, it may help to ask, what would make this fail? Send this to the colleague who only disagrees in the chat.",
+   "data": {"text": "Who in your meeting is quietly disagreeing?", "accent": ["quietly"], "kicker": "Send to the colleague who disagrees in the DM", "size": 80}
+  }
+ ],
+ "cover": {"headline": "Why everyone agrees in the meeting and disagrees after", "accent": ["agrees", "after"], "sub": "Pluralistic ignorance"}
+}
