@@ -1,0 +1,114 @@
+{
+ "brand": "Behind the Behavior",
+ "voice": "af_heart",
+ "speed": 1.08,
+ "gap": 0.2,
+ "id": "R041",
+ "title": "Why willpower isn't enough for habit change",
+ "series": "Myth vs psychology",
+ "scenes": [
+  {
+   "role": "hook",
+   "type": "headline",
+   "illustration": "kitchen",
+   "say": "Disciplined people resist temptation less.",
+   "data": {
+    "lines": [
+     "Disciplined people?",
+     "They resist less."
+    ],
+    "accent": [
+     "less."
+    ],
+    "size": 96
+   }
+  },
+  {
+   "role": "setup",
+   "type": "split",
+   "illustration": "kitchen",
+   "say": "You'd expect them to win more fights with temptation. Research suggests they just have fewer fights.",
+   "data": {
+    "left": {
+     "label": "Expected",
+     "text": "Win more fights"
+    },
+    "right": {
+     "label": "Found",
+     "text": "Have fewer fights"
+    }
+   }
+  },
+  {
+   "role": "setup",
+   "type": "chain",
+   "illustration": "shelf",
+   "say": "One explanation is habits. The mithai box sits on a high shelf, bedtime stays fixed, and the choice runs on autopilot.",
+   "data": {
+    "items": [
+     "Sweets out of sight",
+     "Same bedtime",
+     "Choice on autopilot"
+    ]
+   }
+  },
+  {
+   "role": "proof",
+   "type": "bars",
+   "illustration": "desk",
+   "say": "In one study, 205 adults were beeped seven times a day for a week. Desires clashed with goals often. Those high in self-control reported fewer clashes and resisted less.",
+   "data": {
+    "title": "A week of everyday desires",
+    "source": "Hofmann et al. 2012, JPSP",
+    "bars": [
+     {
+      "label": "Beeps with a desire",
+      "value": 0.5,
+      "display": "About 50%"
+     },
+     {
+      "label": "Of those, clashed with a goal",
+      "value": 0.47,
+      "display": "47%",
+      "hi": true
+     }
+    ],
+    "footer": "205 adults, 7 beeps a day, 7 days"
+   }
+  },
+  {
+   "role": "proof",
+   "type": "stack",
+   "illustration": "calendar",
+   "say": "Six later studies found habits like exercise, sleep and studying help explain why self-control pays off.",
+   "data": {
+    "items": [
+     "6 studies, 2,274 people",
+     "Exercise, sleep, study",
+     "Habits carry the load"
+    ]
+   }
+  },
+  {
+   "role": "takeaway",
+   "type": "question",
+   "illustration": "kitchen",
+   "say": "Tonight, move one temptation out of sight. Send this to the friend with a snack drawer.",
+   "data": {
+    "text": "What could you move out of sight tonight?",
+    "accent": [
+     "out of sight"
+    ],
+    "kicker": "Send to the friend with the snack drawer",
+    "size": 80
+   }
+  }
+ ],
+ "cover": {
+  "headline": "Why willpower isn't enough for habit change",
+  "accent": [
+   "willpower"
+  ],
+  "sub": "Fewer fights, not stronger ones"
+ }
+}
